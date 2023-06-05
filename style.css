@@ -1,0 +1,312 @@
+/* .illustrationSection,
+.boxone {
+    border: solid red thin;
+} */
+
+body {
+    margin:0;
+    background-color: black;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.top { 
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#background {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    object-fit: cover;
+    filter: brightness(1.2);
+    z-index: -2;
+}
+
+.headerBar {
+    background-color: #0C134F;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 150px;
+    border-bottom: solid white thin;
+}
+
+.mich {
+    width: 100px;
+    height: 75px;
+}
+.logo {
+    font-size: 50px;
+    color: #f9faf8;
+}
+
+/* links on top right */
+.secondary {
+    display: flex;
+    font-size: 18px;
+    color: #e5e7eb;
+    justify-content: space-evenly;
+    flex-basis: 500px;
+    gap:5px;
+}
+
+
+/* SIDE NAVIGATION BAR */
+
+.sideNav {
+    opacity: .5;
+    background-color: #0C134F;
+    position:relative;
+    left: -260px;
+    transition: 0.3s;
+    border-radius: 0 10px 10px 0;
+    padding: 50px;
+    display: flex;
+    max-width: 200px;
+    justify-content: space-between;
+}
+
+.sideNav:hover {
+    opacity: 1;
+    left:0;
+}
+
+.leftBox {
+    width: 450px;
+    justify-content: center;
+}
+
+.mainText {
+    display: flex;
+    font-size: 48px;
+    font-weight: 800;
+    color: #F9FAF8;
+    flex-basis: 300px;
+ }
+
+.subText {
+    display: flex;
+    font-size:18px;
+    color: #E5E7EB;
+    flex-basis: 400px;
+    padding: 25px 0;
+}
+
+button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    font-size: medium;
+    border-radius: 10px;
+    padding: 10px 15px;
+    flex-basis:25%;
+    border:none;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+button:active {
+    background-color: #023381;
+}
+
+/* TIMER */
+
+.timeBox {
+    margin-top: 70px;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.timerText {
+    font-size: 50px;
+    color: goldenrod;
+    text-align: center;
+}
+
+
+#timer {
+    font-size: 30px;
+    text-align: center;
+    color: goldenrod;
+}
+
+
+
+
+
+/* INFO AREA */
+
+.info {
+    display:flex;
+    flex-flow: column;
+    padding-bottom: 100px;
+}
+
+@keyframes color-change {
+    0% { text-shadow: 0 0 15px #001aff; }
+    20% { text-shadow: 0 0 15px #3e37b6; }
+    40% { text-shadow: 0 0 15px #0000ff; }
+    60% { text-shadow: 0 0 15px #091fe4; }
+    80% { text-shadow: 0 0 15px #3e24d1; }
+    100% { text-shadow: 0 0 15px #1b11dc; }
+}
+
+.infoText {
+    align-self: center;
+    font-size: 36px;
+    font-weight: 800;
+    color:#a2b7d4;
+    padding:25px 0;
+    animation: color-change 5s infinite;
+}
+
+/* BOX ART */
+.illustrationSection {
+    gap:40px;
+    justify-content: center;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    display: flex;
+    border-radius: 10px;
+    border:solid #3882F6;
+    flex-basis:150px;
+    height:150px;
+    justify-content: center;
+}
+
+.quoteArea {
+    display: flex;
+    flex-direction: column;
+    background-color: #e5e7eb;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.quoteBox {
+    width: 750px;
+}
+
+#quoteText {
+    font-size: 36px;
+}
+
+#author {
+    margin-top: 20px;
+    text-align: end;
+    font-weight: 800;
+    font-size:30px;
+}
+
+
+/* Support Area */
+
+/* .contact {
+    display: flex;
+} */
+
+.callToAction {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #3882F6;
+    border-radius: 10px;
+    margin: 10px 200px;
+    padding: 20px 100px;
+    justify-content: center;
+}
+
+
+
+.action {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.support {
+    align-items: center;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 25px;
+    flex-basis: 100%;
+}
+
+button.supportButton {
+    border:solid white thin;
+    flex-basis: 20%;
+    justify-content: center;
+    white-space: none;
+ }
+
+.footer {
+    color: white;
+    align-self: center;
+    padding: 30px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover.spotify {
+    color: rgb(48, 245, 104);
+}
+
+.one, .two, .three {
+    opacity: .5;
+    gap: 5px;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    padding: 5px 10px;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 200px;
+}
+
+.one:hover,
+.two:hover,
+.three:hover {
+    opacity: 1;
+}
+
+.spotify,
+.IG {
+    border-radius: 10px;
+    display: flex;
+    max-height: 30px;
+    flex-basis: 30px;
+    height: 300px;
+    align-items: center;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgb(48, 48, 158);
+}
+
+.boxone,
+.boxtwo,
+.boxthree,
+.boxfour {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.boxArt {
+    flex-grow: 1;
+    border-radius: 10px;
+}
